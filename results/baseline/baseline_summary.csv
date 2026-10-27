@@ -1,0 +1,5 @@
+prefetcher,benchmark,ipc,instructions,cycles,l2_prefetch_requested,l2_prefetch_issued,l2_prefetch_useful,l2_prefetch_useless,log_file
+baseline,400.perlbench-41B,1.422,1000000,703385,0,0,0,0,logs/baseline/400.perlbench-41B.log
+baseline,602.gcc_s-2226B,0.0774,1000000,12919804,0,0,0,0,logs/baseline/Baseline__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+baseline,605.mcf_s-782B,0.07123,1000002,14040010,0,0,0,0,logs/baseline/Baseline__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+baseline,perlbench,1.422,1000000,703385,0,0,0,0,logs/baseline_perlbench.log

@@ -1,0 +1,2 @@
+trace,configuration,warmup_instructions,simulation_instructions,cycles,IPC,L2_prefetch_requested,L2_prefetch_issued,L2_prefetch_useful,L2_prefetch_useless
+400.perlbench-41B.champsimtrace.xz,ip_stride,100000,1000000,703385,1.422,6,6,0,0

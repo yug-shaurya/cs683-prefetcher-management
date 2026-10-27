@@ -1,0 +1,48 @@
+diff --git a/config/parse.py b/config/parse.py
+index b9cad569..9d07e739 100644
+--- a/config/parse.py
++++ b/config/parse.py
+@@ -403,8 +403,8 @@ class NormalizedConfiguration:
+                '_queue_check_full_addr': cache.get('_first_level', False) or cache.get('wq_check_full_addr', False),
+ 
+                 # Get module path names and unique module names
+-               '_replacement_data': list(map(replacement_parse, util.wrap_list(cache.get('replacement', 'lru')))),
+-               '_prefetcher_data': [*map(functools.partial(prefetcher_parse, cache=cache), util.wrap_list(cache.get('prefetcher', 'no')))]
++               '_replacement_data': util.unique_by('name', map(replacement_parse, util.wrap_list(cache.get('replacement', 'lru')))),
++               '_prefetcher_data': util.unique_by('name', map(functools.partial(prefetcher_parse, cache=cache), util.wrap_list(cache.get('prefetcher', 'no'))))
+             } for k,cache in caches.items())
+         )
+ 
+@@ -422,9 +422,9 @@ class NormalizedConfiguration:
+             ({
+                 'name': c['name'],
+                 '_branch_predictor_data':
+-                    [*map(branch_parse, util.wrap_list(c.get('branch_predictor', 'hashed_perceptron')))],
++                    util.unique_by('name', map(branch_parse, util.wrap_list(c.get('branch_predictor', 'hashed_perceptron')))),
+                 '_btb_data':
+-                    [*map(btb_parse, util.wrap_list(c.get('btb', 'basic_btb')))]
++                    util.unique_by('name', map(btb_parse, util.wrap_list(c.get('btb', 'basic_btb'))))
+              } for c in cores),
+             ).values()
+         )
+diff --git a/config/util.py b/config/util.py
+index 072641cd..555e95aa 100644
+--- a/config/util.py
++++ b/config/util.py
+@@ -75,6 +75,16 @@ def chain(*dicts):
+ 
+     return functools.reduce(merge_dicts, dicts, {})
+ 
++def unique_by(key, iterable):
++    ''' Order-preserving dedupe of dicts by the given key.
++    util.chain() concatenates list values on merge, so a module list in the
++    config is repeated once per merge pass. The config means "use these
++    modules", not "accumulate them". '''
++    seen = {}
++    for item in iterable:
++        seen.setdefault(item.get(key), item)
++    return list(seen.values())
++
+ def star(func):
+     ''' Convert a function object that takes a starred parameter into one that takes an iterable parameter. '''
+     def result(args):

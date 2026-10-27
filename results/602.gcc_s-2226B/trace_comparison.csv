@@ -1,0 +1,10 @@
+configuration,status,ipc,cycles,ipc_speedup_vs_baseline,cycle_reduction_vs_baseline_pct,prefetch_requested,prefetch_issued,prefetch_useful,prefetch_useless,raw_log
+Baseline,Metrics extracted,0.0774,12919804,1.0,0.0,0,0,0,0,logs/baseline/Baseline__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+A: IP-stride,Metrics extracted,0.1847,5412802,2.3863,58.1,144599,144599,57334,210,logs/ip_stride/ip_stride__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+B: Next-line,Metrics extracted,0.1486,6731385,1.9199,47.9,70247,70247,68271,1342,logs/next_line/next_line__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+C: SPP-dev,Metrics extracted,0.3896,2566649,5.0336,80.13,1269549,921681,49439,89,logs/spp_dev/spp_dev__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+I-POP prototype,Metrics extracted,0.198,5051262,2.5581,60.9,144587,144545,68711,2836,logs/I_POP_Adaptive_Controller__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+A+B,Combination not yet validated/run,,,,,,,,,
+A+C,Combination not yet validated/run,,,,,,,,,
+B+C,Combination not yet validated/run,,,,,,,,,
+A+B+C,Combination not yet validated/run,,,,,,,,,

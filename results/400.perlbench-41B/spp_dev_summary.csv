@@ -1,0 +1,2 @@
+trace,configuration,warmup_instructions,simulation_instructions,cycles,IPC,L2_prefetch_requested,L2_prefetch_issued,L2_prefetch_useful,L2_prefetch_useless,L2_average_miss_latency
+400.perlbench-41B.champsimtrace.xz,spp_dev,100000,1000000,703008,1.422,8,8,0,0,178.4

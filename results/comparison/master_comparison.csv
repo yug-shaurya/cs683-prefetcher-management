@@ -1,0 +1,18 @@
+trace,configuration,status,ipc,cycles,ipc_speedup_vs_baseline,cycle_reduction_vs_baseline_pct,prefetch_requested,prefetch_issued,prefetch_useful,prefetch_useless,raw_log
+400.perlbench-41B,Baseline,Metrics extracted,1.422,703385,1.0,0.0,0,0,0,0,logs/baseline_perlbench.log
+400.perlbench-41B,A: IP-stride,Metrics extracted,1.422,703385,1.0,0.0,6,6,0,0,logs/ip_stride_perlbench.log
+400.perlbench-41B,B: Next-line,Metrics extracted,1.425,701862,1.0021,0.22,36,36,8,0,logs/next_line_perlbench.log
+400.perlbench-41B,C: SPP-dev,Metrics extracted,1.422,703008,1.0,0.05,8,8,0,0,logs/spp_dev_perlbench.log
+400.perlbench-41B,I-POP prototype,Metrics extracted,1.425,701862,1.0021,0.22,36,36,8,0,logs/I_POP_Adaptive_Controller__SPEC2017_400_perlbench__Simulation_Log.txt
+602.gcc_s-2226B,Baseline,Metrics extracted,0.0774,12919804,1.0,0.0,0,0,0,0,logs/baseline/Baseline__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+602.gcc_s-2226B,A: IP-stride,Metrics extracted,0.1847,5412802,2.3863,58.1,144599,144599,57334,210,logs/ip_stride/ip_stride__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+602.gcc_s-2226B,B: Next-line,Metrics extracted,0.1486,6731385,1.9199,47.9,70247,70247,68271,1342,logs/next_line/next_line__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+602.gcc_s-2226B,C: SPP-dev,Metrics extracted,0.3896,2566649,5.0336,80.13,1269549,921681,49439,89,logs/spp_dev/spp_dev__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+602.gcc_s-2226B,I-POP prototype,Metrics extracted,0.198,5051262,2.5581,60.9,144587,144545,68711,2836,logs/I_POP_Adaptive_Controller__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+605.mcf_s-782B,Baseline,Metrics extracted,0.07123,14040010,1.0,0.0,0,0,0,0,logs/baseline/Baseline__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+605.mcf_s-782B,A: IP-stride,Metrics extracted,0.1098,9105637,1.5415,35.15,104668,104668,41800,257,logs/ip_stride/ip_stride__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+605.mcf_s-782B,B: Next-line,Metrics extracted,0.09867,10134742,1.3852,27.82,144643,144643,42154,78062,logs/next_line/next_line__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+605.mcf_s-782B,C: SPP-dev,Metrics extracted,0.1057,9457558,1.4839,32.64,153625,153625,16523,974,logs/spp_dev/spp_dev__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+605.mcf_s-782B,I-POP prototype,Metrics extracted,0.1036,9657121,1.4544,31.22,268995,268995,51730,144840,logs/I_POP_Adaptive_Controller__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+619.lbm_s-2676B,I-POP prototype,Metrics extracted,0.971,1029879,,,23914,23914,8092,366,logs/I_POP_Adaptive_Controller__SPEC2017_619.lbm_s-2676B__Simulation_Log.txt
+657.xz_s-2302B,I-POP prototype,Metrics extracted,0.6676,1497992,,,8221,8221,923,1940,logs/I_POP_Adaptive_Controller__SPEC2017_657.xz_s-2302B__Simulation_Log.txt

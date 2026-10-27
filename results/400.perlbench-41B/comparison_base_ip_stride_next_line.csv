@@ -1,0 +1,4 @@
+trace,configuration,cycles,IPC,cycle_reduction_percent,L2_prefetch_requested,L2_prefetch_issued,L2_prefetch_useful,L2_prefetch_useless
+400.perlbench-41B.champsimtrace.xz,baseline,703385,1.422,0.000,0,0,0,0
+400.perlbench-41B.champsimtrace.xz,ip_stride,703385,1.422,0.000,6,6,0,0
+400.perlbench-41B.champsimtrace.xz,next_line,701862,1.425,0.2165,36,36,8,0

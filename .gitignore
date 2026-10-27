@@ -1,0 +1,19 @@
+# Traces — multi-GB, never commit
+traces/
+*.champsimtrace.xz
+
+# Upstream ChampSim — tracked via patches/ + commit hash instead
+champsim/
+
+# Archives
+*.zip
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local backups
+*.bak
+*.orig

@@ -1,0 +1,95 @@
+P: core count 1
+P: caches ['cpu0_DTLB', 'cpu0_ITLB', 'cpu0_L1D', 'cpu0_L1I', 'cpu0_L2C', 'cpu0_STLB', 'LLC']
+P: ptws ['cpu0_PTW']
+P: pmem ['data_rate', 'channels', 'ranks', 'bankgroups', 'banks', 'bank_rows', 'bank_columns', 'channel_width', 'wq_size', 'rq_size', 'tCAS', 'tRCD', 'tRP', 'tRAS', 'refresh_period', 'refreshes_per_period', 'frequency']
+P: vmem ['pte_page_size', 'num_levels', 'minor_fault_penalty', 'randomization']
+P: core count 1
+P: caches []
+P: ptws []
+P: pmem []
+P: vmem []
+branch_context ['/home/yug1809/Documents/CS683/ipop_project/champsim/branch']
+btb_context ['/home/yug1809/Documents/CS683/ipop_project/champsim/btb']
+replacement_context ['/home/yug1809/Documents/CS683/ipop_project/champsim/replacement']
+prefetcher_context ['/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher']
+D: keys in root ['block_size', 'page_size', 'heartbeat_frequency']
+D: core cpu0 ['name', 'DIB', 'frequency', 'ifetch_buffer_size', 'decode_buffer_size', 'dispatch_buffer_size', 'register_file_size', 'rob_size', 'lq_size', 'sq_size', 'fetch_width', 'decode_width', 'dispatch_width', 'execute_width', 'lq_width', 'sq_width', 'retire_width', 'mispredict_penalty', 'scheduler_size', 'decode_latency', 'dispatch_latency', 'schedule_latency', 'execute_latency', 'branch_predictor', 'btb']
+D: cache cpu0_DTLB ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load']
+D: cache cpu0_ITLB ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load']
+D: cache cpu0_L1D ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load', 'virtual_prefetch', 'prefetch_activate', 'prefetcher']
+D: cache cpu0_L1I ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load', 'virtual_prefetch', 'prefetch_activate', 'prefetcher']
+D: cache cpu0_L2C ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load', 'virtual_prefetch', 'prefetch_activate', 'prefetcher']
+D: cache cpu0_STLB ['name', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load']
+D: cache LLC ['name', 'frequency', 'sets', 'ways', 'rq_size', 'wq_size', 'pq_size', 'mshr_size', 'latency', 'max_tag_check', 'max_fill', 'prefetch_as_load', 'virtual_prefetch', 'prefetch_activate', 'prefetcher', 'replacement']
+D: ptw cpu0_PTW ['name', 'pscl5_set', 'pscl5_way', 'pscl4_set', 'pscl4_way', 'pscl3_set', 'pscl3_way', 'pscl2_set', 'pscl2_way', 'rq_size', 'mshr_size', 'max_read', 'max_write']
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDip_stride', 'path': 'prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': 'prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDspp_dev', 'path': 'prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'replacementDlru', 'path': 'replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'prefetcherDno', 'path': 'prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'branchDbimodal', 'path': 'branch/bimodal', 'legacy': False, 'class': 'bimodal'}
+M: {'name': 'btbDbasic_btb', 'path': 'btb/basic_btb', 'legacy': False, 'class': 'basic_btb'}
+M: {'name': 'replacementDlru', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/replacement/lru', 'legacy': False, 'class': 'lru'}
+M: {'name': 'replacementDsrrip', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/replacement/srrip', 'legacy': False, 'class': 'srrip'}
+M: {'name': 'replacementDship', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/replacement/ship', 'legacy': False, 'class': 'ship'}
+M: {'name': 'replacementDrandom', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/replacement/random', 'legacy': False, 'class': 'random'}
+M: {'name': 'replacementDdrrip', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/replacement/drrip', 'legacy': False, 'class': 'drrip'}
+M: {'name': 'prefetcherDspp_dev', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/spp_dev', 'legacy': False, 'class': 'spp_dev'}
+M: {'name': 'prefetcherDva_ampm_lite', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/va_ampm_lite', 'legacy': False, 'class': 'va_ampm_lite'}
+M: {'name': 'prefetcherDip_stride', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/ip_stride', 'legacy': False, 'class': 'ip_stride'}
+M: {'name': 'prefetcherDnext_line', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/next_line', 'legacy': False, 'class': 'next_line'}
+M: {'name': 'prefetcherDno', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/no', 'legacy': False, 'class': 'no'}
+M: {'name': 'branchDhashed_perceptron', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/branch/hashed_perceptron', 'legacy': False, 'class': 'hashed_perceptron'}
+M: {'name': 'branchDperceptron', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/branch/perceptron', 'legacy': False, 'class': 'perceptron'}
+M: {'name': 'branchDgshare', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/branch/gshare', 'legacy': False, 'class': 'gshare'}
+M: {'name': 'branchDbimodal', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/branch/bimodal', 'legacy': False, 'class': 'bimodal'}
+M: {'name': 'btbDbasic_btb', 'path': '/home/yug1809/Documents/CS683/ipop_project/champsim/btb/basic_btb', 'legacy': False, 'class': 'basic_btb'}
+Configuring files to:
+Binary directory: ./bin
+Source directory: []
+Object directory: /home/yug1809/Documents/CS683/ipop_project/champsim/.csconfig
+Makefile directory: /home/yug1809/Documents/CS683/ipop_project/champsim
+For Executable ./bin/champsim
+Modules:
+  btbDbasic_btb: btb/basic_btb -> basic_btb
+  branchDbimodal: branch/bimodal -> bimodal
+  branchDgshare: /home/yug1809/Documents/CS683/ipop_project/champsim/branch/gshare -> gshare
+  branchDhashed_perceptron: /home/yug1809/Documents/CS683/ipop_project/champsim/branch/hashed_perceptron -> hashed_perceptron
+  branchDperceptron: /home/yug1809/Documents/CS683/ipop_project/champsim/branch/perceptron -> perceptron
+  prefetcherDip_stride: prefetcher/ip_stride -> ip_stride
+  prefetcherDnext_line: prefetcher/next_line -> next_line
+  prefetcherDno: prefetcher/no -> no
+  prefetcherDspp_dev: prefetcher/spp_dev -> spp_dev
+  prefetcherDva_ampm_lite: /home/yug1809/Documents/CS683/ipop_project/champsim/prefetcher/va_ampm_lite -> va_ampm_lite
+  replacementDdrrip: /home/yug1809/Documents/CS683/ipop_project/champsim/replacement/drrip -> drrip
+  replacementDlru: replacement/lru -> lru
+  replacementDrandom: /home/yug1809/Documents/CS683/ipop_project/champsim/replacement/random -> random
+  replacementDship: /home/yug1809/Documents/CS683/ipop_project/champsim/replacement/ship -> ship
+  replacementDsrrip: /home/yug1809/Documents/CS683/ipop_project/champsim/replacement/srrip -> srrip
+Writing objects to /home/yug1809/Documents/CS683/ipop_project/champsim/.csconfig

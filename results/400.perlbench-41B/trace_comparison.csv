@@ -1,0 +1,10 @@
+configuration,status,ipc,cycles,ipc_speedup_vs_baseline,cycle_reduction_vs_baseline_pct,prefetch_requested,prefetch_issued,prefetch_useful,prefetch_useless,raw_log
+Baseline,Metrics extracted,1.422,703385,1.0,0.0,0,0,0,0,logs/baseline_perlbench.log
+A: IP-stride,Metrics extracted,1.422,703385,1.0,0.0,6,6,0,0,logs/ip_stride_perlbench.log
+B: Next-line,Metrics extracted,1.425,701862,1.0021,0.22,36,36,8,0,logs/next_line_perlbench.log
+C: SPP-dev,Metrics extracted,1.422,703008,1.0,0.05,8,8,0,0,logs/spp_dev_perlbench.log
+I-POP prototype,Metrics extracted,1.425,701862,1.0021,0.22,36,36,8,0,logs/I_POP_Adaptive_Controller__SPEC2017_400_perlbench__Simulation_Log.txt
+A+B,Combination not yet validated/run,,,,,,,,,
+A+C,Combination not yet validated/run,,,,,,,,,
+B+C,Combination not yet validated/run,,,,,,,,,
+A+B+C,Combination not yet validated/run,,,,,,,,,

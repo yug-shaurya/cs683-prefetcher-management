@@ -1,0 +1,46 @@
+BASELINE — SIMULATION SUMMARY
+============================================================================
+
+Simulation settings: check the original run command/log.
+These summaries extract recorded metrics; they do not rerun simulations.
+
+Benchmark: 400.perlbench-41B
+  IPC: 1.422
+  Instructions: 1000000
+  Cycles: 703385
+  L2 prefetch requested: 0
+  L2 prefetch issued: 0
+  L2 prefetch useful: 0
+  L2 prefetch useless: 0
+  Raw log: logs/baseline/400.perlbench-41B.log
+
+Benchmark: 602.gcc_s-2226B
+  IPC: 0.0774
+  Instructions: 1000000
+  Cycles: 12919804
+  L2 prefetch requested: 0
+  L2 prefetch issued: 0
+  L2 prefetch useful: 0
+  L2 prefetch useless: 0
+  Raw log: logs/baseline/Baseline__SPEC2017_602.gcc_s-2226B__Simulation_Log.txt
+
+Benchmark: 605.mcf_s-782B
+  IPC: 0.07123
+  Instructions: 1000002
+  Cycles: 14040010
+  L2 prefetch requested: 0
+  L2 prefetch issued: 0
+  L2 prefetch useful: 0
+  L2 prefetch useless: 0
+  Raw log: logs/baseline/Baseline__SPEC2017_605.mcf_s-782B__Simulation_Log.txt
+
+Benchmark: perlbench
+  IPC: 1.422
+  Instructions: 1000000
+  Cycles: 703385
+  L2 prefetch requested: 0
+  L2 prefetch issued: 0
+  L2 prefetch useful: 0
+  L2 prefetch useless: 0
+  Raw log: logs/baseline_perlbench.log
+

@@ -5,3 +5,10 @@ nohup: ignoring input
 === mcf W64 start 01:36:33 ===
 === gcc W64 start 01:36:33 ===
 === lbm W64 start 01:36:33 ===
+=== xz W64 done 01:43:04 ===
+=== lbm T1a done 01:53:55 ===
+=== lbm T1 done 01:53:55 ===
+=== lbm W64 done 01:53:59 ===
+=== gcc W64 done 01:56:21 ===
+=== mcf W64 done 02:11:50 ===
+EXTRA DONE 02:11:50

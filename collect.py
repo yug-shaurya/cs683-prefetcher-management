@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, glob, os, csv
 
-ARMS = ["R0","R1","R2","R3","R4","A1","A2","A3","A4","S2048","S4096","S8192"]
+ARMS = ["R0","R1","R2","R3","R4","A1","A2","A3","A4","S2048","S4096","S8192","T1","T1a","W64"]
 TRACES = ["gcc","mcf","lbm","xz"]
 
 def total(cache, field):

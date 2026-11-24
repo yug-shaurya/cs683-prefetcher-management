@@ -1,0 +1,12 @@
+[VMEM] WARNING: physical memory size is smaller than virtual memory size.
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+Warmup Instructions: 10000000
+Simulation Instructions: 50000000
+Number of CPUs: 1
+Page size: 4096
+
+Off-chip DRAM Size: 16 GiB Channels: 1 Width: 64-bit Data Rate: 3205 MT/s
+Heartbeat CPU 0 instructions: 10000002 cycles: 3131981 heartbeat IPC: 3.193 cumulative IPC: 3.193 (Simulation time: 00 hr 00 min 46 sec)
+Warmup finished CPU 0 instructions: 10000002 cycles: 3131981 cumulative IPC: 3.193 (Simulation time: 00 hr 00 min 46 sec)
+Warmup complete CPU 0 instructions: 10000002 cycles: 3131981 cumulative IPC: 3.193 (Simulation time: 00 hr 00 min 46 sec)

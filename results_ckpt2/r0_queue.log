@@ -1,0 +1,10 @@
+nohup: ignoring input
+=== R0 gcc start 21:51:09 ===
+=== R0 mcf start 21:51:09 ===
+=== R0 xz start 21:51:09 ===
+=== R0 lbm start 21:51:09 ===
+=== R0 xz done 21:56:20 ===
+=== R0 lbm done 22:05:39 ===
+=== R0 mcf done 22:32:37 ===
+=== R0 gcc done 22:38:52 ===
+ALL R0 DONE 22:38:52
